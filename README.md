@@ -15,8 +15,8 @@ In this repo I solve algorithm problems in python.
 ## Executing program
 * Download the repository to your computer and go to project file
 ```
-git clone https://github.com/sayedh/angular-CryptoTracker
-cd angular-CryptoTracker
+git clone https://github.com/sayedh/python-Alogrithms
+cd python-Alogrithms
 code .
 ```
 * Run any of the python files. 
