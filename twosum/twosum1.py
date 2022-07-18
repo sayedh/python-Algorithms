@@ -1,17 +1,17 @@
-def twoSumNaive(num_arr, pair_sum):
-  # search first element in the array
-  for i in range(len(num_arr) - 1):
-    # search other element in the array
-    for j in range(i + 1, len(num_arr)):
-      # if these two elemets sum to pair_sum, print the pair
-      if num_arr[i] + num_arr[j] == pair_sum:
-        print("Pair with sum", pair_sum,"is: (", num_arr[i],",",num_arr[j],")")
+# https://leetcode.com/problems/two-sum/
 
-      
+# Brute Force
 
-# Driver Code
-num_arr = [3, 5, 2, -4, 8, 11]
-pair_sum = 7
+def twoSum(nums, target):
+    for i in range(len(nums)):
+        for j in range(i + 1, len(nums)):
+            if nums[j] == target - nums[i]:
+                return [i, j]
 
-# Function call inside print
-twoSumNaive(num_arr, pair_sum) 
+
+
+nums = [int(x) for x in input("  array: ").split()]
+target = int(input(" target: "))
+
+print("indices:", twoSum(nums, target))
+
