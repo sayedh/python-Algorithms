@@ -1,3 +1,6 @@
+# https://leetcode.com/problems/two-sum/
+
+# Brute Force
 
 from typing import List
 
