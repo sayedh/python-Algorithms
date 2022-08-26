@@ -3,12 +3,9 @@
 # Two pointer
 
 
-
-
 def threeSum(nums):
     nums.sort()
     res = []
-    
     for i in range(len(nums)):
         if i > 0 and nums[i - 1] == nums[i]: continue
         l = i + 1
