@@ -1,0 +1,2 @@
+
+print(trap(height))

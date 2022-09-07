@@ -8,6 +8,7 @@ def groupAnagrams(strs):
         sort = tuple(sorted(i))
         if sort in d:
             d[sort].append(i)
+            print(d)
         else:
             d[sort] = [i]
         

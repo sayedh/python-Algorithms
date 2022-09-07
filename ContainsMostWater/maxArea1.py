@@ -3,14 +3,16 @@
 #  Two Pointer
 
 
-def maxArea(height):
+def maxArea(nums):
     ans = 0
     l = 0
-    r = len(height) - 1
+    r = len(nums) - 1
     while l < r:
-        width = r - l
-        ans = max(ans, min(height[l], height[r]) * width)
-        if height[l] <= height[r]:
+        w = r - l
+        h = min(nums[l], nums[r])
+        ans = max(ans, h * w)
+        
+        if nums[l] <= nums[r]:
             l += 1
         else:
             r -= 1

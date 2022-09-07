@@ -6,17 +6,22 @@
 def firstUniqChar(s):
     if s == 1 : return 0 
 
-    s1 = s
+    str = s
 
-    while len(s1) > 0 :
-        if s1[0] in s1[1:] :
-            s1 = s1.replace(s1[0] , "")
+    while len(str) > 0 :
+ 
+        if str[0] in str[1:]:
+            str = str.replace(str[0], "")
+
         else :
-            return s.index(s1[0])
+            return s.index(str[0])
 
     return -1
 
 
-s = "loveleetcode"
 
+
+
+
+s = "loveleetcode"
 print(firstUniqChar(s))
